@@ -51,8 +51,8 @@ The following new types are defined:
 
 * `ssl::certificate`
 
-   Object that performs the configuration of the NTP service on the node.
-   Supports the following options:
+   Object that adds an SSL certificate to the node. Supports the following
+   options:
 
    * `sslhostname` (string)
 
