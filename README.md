@@ -54,6 +54,26 @@ The following new types are defined:
    Object that adds an SSL certificate to the node. Supports the following
    options:
 
+   * `include_pem` (boolean)
+
+      A flag indicating whether the PEM file should be built by concatenating
+      the private key and certificate files. Defaults to true.
+
+   * `owner` (string)
+
+      The username of the user that should own the certificate, private key and
+      PEM file. Defaults to root if not provided.
+
+   * `path_dir` (string)
+
+      The directory where the certificate, private key and PEM file should be
+      saved. Defaults to /etc/ssl if not provided.
+
+   * `path_filename` (string)
+
+      The base filename of the certificate, private key and PEM file. Defaults
+      to the value of `$sslhostname` if not provided.
+
    * `sslhostname` (string)
 
       The full common name of the certificate, generally a hostname.
